@@ -21,4 +21,4 @@
 ## Увлечения и хобби
 Люблю музыку, кино, видеоигры и велоспорт.
 
-Развиваю сайт про хорошее онлайн-радио — проект [reVoice](http://revoice.ru).
+<img src="http://revoice.ru/new_assets/img/logo/revoice_color_500.png" width="19" height="12" /> Развиваю сайт про хорошее онлайн-радио — проект [reVoice](http://revoice.ru).
