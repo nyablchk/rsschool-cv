@@ -22,3 +22,7 @@
 Люблю музыку, кино, видеоигры и велоспорт.
 
 <img src="http://revoice.ru/new_assets/img/logo/revoice_color_500.png" width="19" height="12" /> Развиваю сайт про хорошее онлайн-радио — проект [reVoice](http://revoice.ru).
+
+## Контактная информация
+* __Telegram:__ [@yablchk](https://t.me/yablchk)
+* __E-mail:__ [yablchk@gmail.com](mailto:yablchk@gmail.com)
