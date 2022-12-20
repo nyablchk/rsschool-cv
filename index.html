@@ -5,22 +5,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/afee128eb7.js"></script>
 
 	<title>Привет! Это сивишка Олега</title>
 </head>
 <body>
 	<div class="background">
 		<video width="100%" height="auto" autoplay="autoplay" muted="muted" loop="loop">
-			<source src="http://revoice.ru/new_assets/video/intro6.webm" type="video/webm"></source>
+			<source src="assets/video/intro.webm" type="video/webm"></source>
 		</video>		
 	</div>
-	<div class="container">
-			<div id="navbar">
-				<a href="https://t.me/yablchk">telegram</a>
-				<a href="mailto:genesis@1000points.ru">genesis@1000points.ru</a>
+	<a name="top"></a>
+	<header>
+		<div id="nav">
+			<div class="anchor">
+			<a href="#about">about</a>
+			<a href="#skills">skills</a>
+			<a href="#outro">outro</a>	
+			</div>
+			<div class="contact">
+				<a href="https://t.me/yablchk">Touch me via <i class="fa-brands fa-telegram"></i></a>
+				<a href="mailto:genesis@1000points.ru">or 📧</a>
 			</div>
 		</div>
+	</header>
 	<main>
+		<p><a name="about"></a></p>
 		<h1>Oleg Yavelov</h1>
 		<p>Actually i'm an editor/content manager, but I like to try different things and study new skills. <br> I created this page to prove to others that with almost about zero knowledge, you can figure out and do cool stuff.</p>
 		<hr>
@@ -58,6 +68,7 @@
 			</li>
 		</ul>
 		<hr>
+		<p><a name="skills"></a></p>
 		<h2>Soft-skills I've been doing for over a decade</h2>
 		<ol>
 			<li><b>Core</b>
@@ -82,6 +93,15 @@
 			</li>
 		</ol>
 		<hr>
+		<h2>Code example</h2>
+		<p><code>$('a').click(function(){<br>
+			&nbsp;$('html, body').animate({<br>
+			&nbsp;&nbsp;scrollTop: $( $(this).attr('href') ).offset().top<br>
+			&nbsp;&nbsp;}, 500);<br>
+			&nbsp;return false;<br>
+		});</code></p>
+		<hr>
+		<p><a name="outro"></a></p>
 		<h2>Hobbies & favorites</h2>
 		<p>I like music, movies, video games and cycling.</p>
 		<p><img src="assets/img/h-day-radiohat2.png" style="width:25%;" class="radiohat" alt="h-day-radiohat2">My little weakness is radio as a phenomenon.</p>
@@ -90,10 +110,9 @@
 		<p>The project analyzes the field of radio production in the CIS and produces annual rankings of the best projects, among non-commercial radio stations, broadcasting on the web. We also do radio production and music collaborations</p>
 	</main>
 	<footer>
-		<p>with<br>❤️<br>to <br><br>
-		<img src="assets/img/logo-rsschool3.png" style="width:15%;" class="logo-rsschool" alt="logo-rsschool"></p>
+		<p><img src="assets/img/logo-rsschool3.png" style="width:15%;" class="logo-rsschool" alt="logo-rsschool"> <br> with ❤️</p>
 		<p><a href="https://rs.school/js-stage0/" target="_blank">js-stage0</a></p>
-		<p>by nyablchk &copy; 2022</p>
+		<p>by <a href="https://github.com/nyablchk">nyablchk</a> &copy; 2022</p>
 	</footer>
 	<div class="olegies" aria-hidden="true">
 		<div class="faceflake">
