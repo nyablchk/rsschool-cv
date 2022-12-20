@@ -1,5 +1,13 @@
-* {
+html {
+  height: 100%;
+}
 
+body {
+  margin: 0;
+  /* Растягиваем body по высоте html */
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .faceflake {
@@ -28,7 +36,7 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  opacity: .3;
+  opacity: .2;
 }
  @supports (object-fit: cover) {
      .background > video {
@@ -40,44 +48,77 @@
      }
  }
 
+header {
+  width:980px;
+  height: 35px;
+  background-color: rgb(255, 255, 255, .2);
+  margin: 0 auto;
+}
+
+#nav {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity .5s;
+  transition: all 1.3s ease-in-out 0s;
+}
+
+.fa-telegram {
+  color: #0088cc;
+}
+
+.fa-telegram:hover {
+  color: #0088cc;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0 5px 0 0;
+  height: 35px;
+  line-height: 35px;
+  color: #000;
+  border-bottom: .01em dotted rgb(0, 0, 0, .2);
+  transition: background-color .25s cubic-bezier(.33, .66, .66);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+header a:hover {
+  background-color: rgb(255, 0, 255, .3);
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+header .contact {
+ text-align: right;
+}
+
+header .contact a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0 5px;
+  height: 35px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
 main {
   width:980px;
-  margin:0 auto;
   border: 5px;
   border-color: #000;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
-#navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;   
-  overflow: hidden;
-  background-color: rgb(255, 255, 255, .2);
-  transition:all .5s ease 0s;
-  text-align: center;
-  height: 3em;
-  top: 50px;
-  padding: 10px;
-}
-
-#navbar:hover {
-  overflow: hidden;
-  background-color: #fff;
-  opacity: 1;
-  transition:all .5s ease 0s;
-}
-
-#navbar a {
-  flex: 1 1 auto;
-  margin: 0 5px;
-}
-
-h1, h2, li {
+h1, h2, li, p, a {
   font-family: 'Roboto Mono', monospace;
 }
 
 p {
-  font-family: 'Roboto Mono', monospace;
   text-align: justify;
 }
 
@@ -99,11 +140,10 @@ img.radiohat {
 footer {
   width:1280px;
   background-color: rgb(255, 255, 255, .2);
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 footer p {
   overflow: auto;
   text-align: center;
 }
-
